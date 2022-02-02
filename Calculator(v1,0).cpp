@@ -5,7 +5,7 @@ using namespace std;
 
 void start() {
 	cout << "계산기 v1.0\nMaker : Junhong(Developer)" << endl;
-	cout << "계산기는 계속 개발중임!" << endl;
+	cout << "계산기는 계속 개발중임! 릴리즈 배포를 축하해주세요!" << endl;
 	cout << "해당 계산기 코드는 네이버 지식IN 엑스퍼트의 도움을 받아 제작되었으며, 무단 복제 시 법적 처벌을 받을 수 있습니다." << endl;
 }
 
@@ -23,6 +23,7 @@ int main() {
 		cout << "두번째 수 입력:";
 		cin >> p2;
 
+		// 종료 조건 : 입력 숫자 둘다 0일때 종료
 		if (p1 == 0 && p2 == 0)
 			break;
 
@@ -41,8 +42,14 @@ int main() {
 			result = p1 * p2;
 			break;
 		case '/':
-			result = p1 / p2;
-			break;
+			if (p2 == 0) {
+				cout << "0으로 나눌 수 없습니다." << endl;
+				continue;
+			}
+			else {
+				result = p1 / p2;
+				break;
+			}
 		default:
 			cout << "잘못 입력하셨습니다. 다시 입력해주세요!" << endl;
 			break;
