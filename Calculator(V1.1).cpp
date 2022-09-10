@@ -3,7 +3,7 @@
 using namespace std;
 
 void start() {
-	cout << "계산기 v1.1\nMaker : Dev. Junhong" << endl;
+	cout << "계산기 v1.2\nMaker : Dev. Junhong" << endl;
 	cout << "계산기는 계속 개발중임! 릴리즈 배포를 축하해주세요!" << endl;
 	cout << "해당 계산기 코드는 네이버 지식IN 엑스퍼트의 도움을 받아 제작되었으며, 무단 복제 시 법적 처벌을 받을 수 있습니다." << endl;
 }
@@ -11,8 +11,8 @@ void start() {
 int main() {
 	start();
 
-	int p1, p2 = 0;
-	int result = 0;
+	double p1, p2 = 0;
+	double result = 0;
 	char p3;
 
 	while (true)
@@ -22,15 +22,13 @@ int main() {
 		cout << "두번째 수 입력:";
 		cin >> p2;
 
-		// 종료 조건 : 입력 숫자 둘다 0일때 종료
 		if (p1 == 0 && p2 == 0) {
 			cout << "입력하신 숫자가 모두 0으로 입력되어 게산기를 종료합니다." << endl;
 			break;
 		}
-	
+
 		cout << "사칙연산 부호 입력: ";
 		cin >> p3;
-
 
 		switch (p3) {
 		case '+':
