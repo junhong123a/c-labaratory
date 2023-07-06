@@ -3,7 +3,7 @@
 using namespace std;
 
 void start() {
-	cout << "계산기 v1.2\nMaker : Dev. Junhong" << endl;
+	cout << "계산기 v1.2\nMaker : Junhong" << endl;
 	cout << "계산기는 계속 개발중임! 릴리즈 배포를 축하해주세요!" << endl;
 	cout << "해당 계산기 코드는 네이버 지식IN 엑스퍼트의 도움을 받아 제작되었습니다." << endl;
 }
